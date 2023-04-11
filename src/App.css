@@ -1,38 +1,274 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+nav{
+    background: rgb(104, 71, 210);
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.navbar-brand img{
+    width: 65px;
+    height: auto;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navbar-brand{
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.login{
+    justify-content: end;
+    background: red;
+}
+.landing img{
+    width: 100%;
+    height: auto;
+}
+.landing{
+   padding: 100px 0;
+   background: rgb(104, 71, 210);
+}
+.landing h1{
+    color: #fff;
+}
+h1{
+    font-weight: 900;
+    font-size: 70px;
+}
+.landing button{
+    border-radius: 0%;
+}
+.activity{
+    background-image: linear-gradient(rgb(177, 230, 248), rgb(255, 255, 255));
+}
+.activity .container{
+    padding: 100px 0;
+    box-sizing: border-box;
+    
+}
+.activity .card{
+  text-align: center;
+  padding: 10px 0;
+  border-radius: 15px;
+  border: none;
+}
+.activity .card:hover{
+    transform: scale(1.03);
+   
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    transition: all 0.3s ease;
+}
+.activity i{
+    font-size: 5rem;
+    margin: 20px 0;
+    color: rgb(18, 246, 105);
+}
+.services{
+    background-image: linear-gradient(rgb(177, 230, 248), rgb(255, 255, 255));
+}
+.services .container{
+    padding: 100px 0;
+}
+.services .card{
+  padding: 30px;
+  border-radius: 20px;
+  border: 1px solid rgb(122, 122, 122);
+}
+.services i{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+   text-align: center;
+   background:  rgb(18, 246, 105);
+   color: #fff;
+   font-size: 40px;
+   padding: 10px;
+   display: flex;
+   justify-content: center;align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.services .card-body{
+    margin-top: 10px;
+    padding-right: 100px;
+    color: rgb(104, 103, 103);
+}
+.services .card:hover{
+    transform: scale(1.03);
+   
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    transition: all 0.3s ease;
+}
+.reffer{
+    background-image: linear-gradient(rgb(177, 230, 248), rgb(255, 255, 255));
+}
+.reffer .container{
+    padding: 100px 0;
+
+}
+.reffer .card{
+    text-align: center;
+    padding: 50px 100px;
+    border: none;
+    background:  rgb(13, 93, 78);
+    color: #fff;
+    border-radius: 30px;
+}
+.reffer h2{
+    font-weight: 700;
+    margin: 20px 0;
+
+}
+.reffer .card:hover{
+    transform: scale(1.03);
+   
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    transition: all 0.3s ease;
+}
+.reffer a{
+    margin-top: 30px;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 0%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.installapp{
+    background-image: linear-gradient(rgb(177, 230, 248), rgb(255, 255, 255));
+}
+.installapp .container{
+    padding: 100px 0;
+
+}
+.installapp .card{
+    text-align: center;
+    padding: 50px 100px;
+    border: none;
+    background:  rgb(6, 69, 102);
+    color: #fff;
+    border-radius: 30px;
+}
+.installapp h2{
+    font-weight: 700;
+    margin: 20px 0;
+
+}
+.installapp .card:hover{
+    transform: scale(1.03);
+   
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    transition: all 0.3s ease;
+}
+.installapp a{
+    margin-top: 30px;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 0%;
+}
+.footer{
+    background: rgb(11, 11, 43);
+    color: #fff;
+}
+.footer .container{
+    padding: 100px 0;
+}
+
+.footer .card{
+    background: transparent;
+}
+.footer h5 img{
+    width: 65px;
+    height: auto;
+}
+.footer .card-title{
+    font-weight: bold;
+}
+.footer li{
+    list-style: none;
+}
+.footer ul{
+    padding:0;
+}
+.footer a{
+    text-decoration: none;
+    color: #fff;
+}
+.footer .copyright ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+   padding-bottom: 20px;
+}
+
+.testimonialcontainer{
+    background-image: linear-gradient(rgb(177, 230, 248), rgb(255, 255, 255));
+}
+.testimonialcontainer .container{
+    padding: 100px 0;
+}
+
+.testimonial{
+    border-right: 4px solid #2A3D7D;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+    padding: 30px 30px 30px 130px;
+    margin: 0 15px 30px 15px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+}
+.testimonial:before{
+    content: "";
+    position: absolute;
+    bottom: -4px;
+    left: -17px;
+    border-top: 25px solid #29D18B;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    transform: rotate(45deg);
+}
+.testimonial:after{
+    content: "";
+    position: absolute;
+    top: -4px;
+    left: -17px;
+    border-top: 25px solid #29D18B;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    transform: rotate(135deg);
+}
+.testimonial .pic{
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: absolute;
+    top: 60px;
+    left: 20px;
+}
+.testimonial .pic img{
+    width: 100%;
+    height: auto;
+}
+.testimonial .description{
+    font-size: 15px;
+    letter-spacing: 1px;
+    color: #6f6f6f;
+    line-height: 25px;
+    margin-bottom: 15px;
+}
+.testimonial .title{
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #29D18B;
+    margin: 0;
+}
+.testimonial .post{
+    display: inline-block;
+    font-size: 17px;
+    color: #29D18B;
+    font-style:italic;
 }
