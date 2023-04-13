@@ -13,7 +13,7 @@ function Landing() {
               </button>
             </div>
             <div className="col-lg-6 col-md-12 col-sm-12 pt-5">
-              <img src="./images/bgimage.png" alt="" />
+              <img src="https://i.postimg.cc/KjnxW5NS/bgimage.png" alt="" />
             </div>
           </div>
         </div>

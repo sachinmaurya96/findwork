@@ -18,7 +18,7 @@ nav{
 }
 .login{
     justify-content: end;
-    background: red;
+   
 }
 .landing img{
     width: 100%;
@@ -51,6 +51,7 @@ h1{
   padding: 10px 0;
   border-radius: 15px;
   border: none;
+  border: 1px solid rgb(122, 122, 122);
 }
 .activity .card:hover{
     transform: scale(1.03);
@@ -271,4 +272,110 @@ h1{
     font-size: 17px;
     color: #29D18B;
     font-style:italic;
+}
+
+.owl-nav i {
+    font-size: 52px;
+  }
+
+/* responsive code start */
+/* Extra small devices (phones, 600px and down) */
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+/* @media only screen and (min-width: 600px) {...} */
+
+/* Medium devices (landscape tablets, 768px and up) */
+/* @media only screen and (min-width: 768px) {...} */
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 1204px) {
+    .landing h1{
+        font-size: 50px;
+    }
+    .services .card{
+        padding: 10px;
+        margin-top: 20px;
+    }
+    .activity .card{
+        margin-top: 20px;
+    }
+    .reffer .card{
+        padding: 30px 50px;
+    }
+    .installapp .card{
+        padding: 30px 50px;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .landing h1{
+        font-size: 40px;
+    }
+    .reffer .card{
+        padding: 10px 5px;
+    }
+    .installapp .card{
+        padding: 10px 5px;
+    }
+    .activity{
+        padding: 0 10px;
+    }
+    .activity .container{
+        padding: 20px 0;
+        box-sizing: border-box;
+        
+    }
+    .services{
+        padding: 0 10px;
+    }
+    .services .container{
+        padding: 20px 0;
+        box-sizing: border-box;
+        
+    }
+    .reffer{
+        padding: 0 10px;
+    }
+    .reffer .container{
+        padding: 20px 0;
+        box-sizing: border-box;
+        
+    }
+    .installapp{
+        padding: 0 10px;
+    }
+    .installapp .container{
+        padding: 20px 0;
+        box-sizing: border-box;
+        
+    }
+    .testimonialcontainer{
+        padding: 0 10px;
+    }
+    .testimonialcontainer .container{
+        padding: 20px 0;
+    }
+    .testimonial{
+        margin: 0;
+        padding: 12px;
+        position: relative;
+    }
+    .testimonial .pic{
+        max-width: 80px;
+        max-height: 80px;
+        border-radius: 50%;
+        position: static;
+        position: sticky;
+        left: 30%;
+        top: 10px;
+        margin-bottom: 10px;
+        
+    }
+    .testimonial .pic img{
+        width: 100%;
+        height: auto;
+    }
+    .testimonial .title{
+        margin-left: 10px;
+    }
 }

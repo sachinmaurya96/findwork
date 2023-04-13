@@ -9,7 +9,7 @@ function Footer() {
             <div className="col-lg-3 col-md-6 col-sm-12">
               <div className="card" >
                 <div className="card-body">
-                  <h5 className="card-title">  <img src="./images/logo3d.png" alt="" /> Find mini Job</h5>
+                  <h5 className="card-title">  <img src="https://i.postimg.cc/wxWtcqr6/logo3d.png" alt="" /> Find mini Job</h5>
                   <p className="card-text">
                   Best Microjob & Freelance Site To Make Money Online
                   </p>

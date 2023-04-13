@@ -1,13 +1,14 @@
 import React from "react";
 
 
+
 function Navbar() {
   return (
     <>
       <nav className="navbar navbar-expand-lg navbar-dark">
         <div className="container-fluid">
           <a className="navbar-brand fs-2" href="#">
-                <img src="./images/logo3d.png" alt="" />Find Work
+                <img src="https://i.postimg.cc/wxWtcqr6/logo3d.png" alt="brand" />Find Work
           </a>
           <button
             className="navbar-toggler"
