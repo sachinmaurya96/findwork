@@ -4,9 +4,12 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    
+   
 }
 nav{
     background: rgb(104, 71, 210);
+    overflow-x: hidden;
 }
 .navbar-brand img{
     width: 65px;
@@ -27,6 +30,7 @@ nav{
 .landing{
    padding: 100px 0;
    background: rgb(104, 71, 210);
+   overflow-x: hidden;
 }
 .landing h1{
     color: #fff;
@@ -40,6 +44,7 @@ h1{
 }
 .activity{
     background-image: linear-gradient(rgb(177, 230, 248), rgb(255, 255, 255));
+    overflow-x: hidden;
 }
 .activity .container{
     padding: 100px 0;
@@ -54,9 +59,7 @@ h1{
   border: 1px solid rgb(122, 122, 122);
 }
 .activity .card:hover{
-    transform: scale(1.03);
-   
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    border: 1px solid rgb(50, 90, 222);
     transition: all 0.3s ease;
 }
 .activity i{
@@ -66,6 +69,7 @@ h1{
 }
 .services{
     background-image: linear-gradient(rgb(177, 230, 248), rgb(255, 255, 255));
+    overflow-x: hidden;
 }
 .services .container{
     padding: 100px 0;
@@ -94,13 +98,12 @@ h1{
     color: rgb(104, 103, 103);
 }
 .services .card:hover{
-    transform: scale(1.03);
-   
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    border: 1px solid rgb(50, 90, 222);
     transition: all 0.3s ease;
 }
 .reffer{
     background-image: linear-gradient(rgb(177, 230, 248), rgb(255, 255, 255));
+    overflow-x: hidden;
 }
 .reffer .container{
     padding: 100px 0;
@@ -120,9 +123,7 @@ h1{
 
 }
 .reffer .card:hover{
-    transform: scale(1.03);
-   
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    border: 1px solid rgb(50, 90, 222);
     transition: all 0.3s ease;
 }
 .reffer a{
@@ -135,6 +136,7 @@ h1{
 
 .installapp{
     background-image: linear-gradient(rgb(177, 230, 248), rgb(255, 255, 255));
+    overflow-x: hidden;
 }
 .installapp .container{
     padding: 100px 0;
@@ -154,9 +156,7 @@ h1{
 
 }
 .installapp .card:hover{
-    transform: scale(1.03);
-   
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    border: 1px solid rgb(50, 90, 222);
     transition: all 0.3s ease;
 }
 .installapp a{
@@ -168,6 +168,7 @@ h1{
 .footer{
     background: rgb(11, 11, 43);
     color: #fff;
+    overflow-x: hidden;
 }
 .footer .container{
     padding: 100px 0;
@@ -198,11 +199,12 @@ h1{
     justify-content: center;
     align-items: center;
     gap: 30px;
-   padding-bottom: 20px;
+   padding-bottom: 5px;
 }
 
 .testimonialcontainer{
     background-image: linear-gradient(rgb(177, 230, 248), rgb(255, 255, 255));
+    overflow-x: hidden;
 }
 .testimonialcontainer .container{
     padding: 100px 0;
@@ -290,7 +292,7 @@ h1{
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (max-width: 1204px) {
-    .landing h1{
+  h1{
         font-size: 50px;
     }
     .services .card{
@@ -308,8 +310,9 @@ h1{
     }
 }
 @media only screen and (max-width: 600px) {
-    .landing h1{
-        font-size: 40px;
+    h1{
+        margin: 0;
+        font-size: 30px;
     }
     .reffer .card{
         padding: 10px 5px;
@@ -327,6 +330,9 @@ h1{
     }
     .services{
         padding: 0 10px;
+    }
+    .services .card {
+        padding: 10px;
     }
     .services .container{
         padding: 20px 0;
@@ -351,6 +357,7 @@ h1{
     }
     .testimonialcontainer{
         padding: 0 10px;
+        width: 100%;
     }
     .testimonialcontainer .container{
         padding: 20px 0;
@@ -378,10 +385,10 @@ h1{
     .testimonial .title{
         margin-left: 10px;
     }
-    body{
-        overflow-x: hidden;
-    }
     .footer a{
         font-size: 12px;
+    }
+    .services .card-body{
+        padding-right: 10px;
     }
 }
