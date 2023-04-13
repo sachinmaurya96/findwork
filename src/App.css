@@ -378,4 +378,10 @@ h1{
     .testimonial .title{
         margin-left: 10px;
     }
+    body{
+        overflow-x: hidden;
+    }
+    .footer a{
+        font-size: 12px;
+    }
 }
