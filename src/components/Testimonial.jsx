@@ -4,7 +4,7 @@ import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
 
 function Testimonial() {
-  const [number,setNumber] = useState(1)
+  const [number,setNumber] = useState(2)
   const [width , setWidth] = useState(window.screen.width)
 
  

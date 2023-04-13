@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 function Landing() {
   return (
@@ -8,9 +9,11 @@ function Landing() {
           <div className="row">
             <div className="col-lg-6 col-md-12 col-sm-12">
               <h1>Best Microjob & Freelance Site To Make Money Online</h1>
+              <NavLink to="/login">
               <button className="btn btn-outline-light  mt-5 fs-3">
                 Get Started <i class="fa-solid fa-arrow-right mx-2"></i>
               </button>
+              </NavLink>
             </div>
             <div className="col-lg-6 col-md-12 col-sm-12 pt-5">
               <img src="https://i.postimg.cc/KjnxW5NS/bgimage.png" alt="" />

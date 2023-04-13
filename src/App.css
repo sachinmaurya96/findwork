@@ -12,7 +12,7 @@ nav{
     overflow-x: hidden;
 }
 .navbar-brand img{
-    width: 65px;
+    width: 50px;
     height: auto;
 }
 .navbar-brand{
@@ -275,10 +275,59 @@ h1{
     color: #29D18B;
     font-style:italic;
 }
-
-.owl-nav i {
-    font-size: 52px;
-  }
+/* login form css */
+.login{
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    top: 100px;
+}
+.login .row{
+    display: flex;
+   align-items: center;
+    flex-direction: column;
+}
+.login .social{
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    grid-gap: 5px;
+    margin-top: 20px;
+}
+.login .social i{
+    margin: 0 5px;
+}
+.login .g{
+    background: crimson;
+    color: #fff;
+}
+.login .tw{
+    background: rgb(45, 122, 211);
+    color: #fff;
+}
+.login .fb{
+    background: rgb(79, 28, 231);
+    color: #fff;
+}
+.login .forgot{
+    cursor: pointer;
+}
+.login .forgot:hover {
+    color: rgb(50, 50, 230);
+    transition: all 0.3s ease;
+}
+.login .btn-center{
+    width: 100%;
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login .form_container{
+    border: 1px solid rgb(169, 167, 167);
+    padding: 20px 10px ;
+    border-radius: 3px;
+}
 
 /* responsive code start */
 /* Extra small devices (phones, 600px and down) */
@@ -288,7 +337,11 @@ h1{
 /* @media only screen and (min-width: 600px) {...} */
 
 /* Medium devices (landscape tablets, 768px and up) */
-/* @media only screen and (min-width: 768px) {...} */
+@media only screen and (max-width: 1440px) {
+    .login{
+        margin-top: 100px;
+    }
+}
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (max-width: 1204px) {
@@ -307,6 +360,9 @@ h1{
     }
     .installapp .card{
         padding: 30px 50px;
+    }
+    .login{
+        top: 200px;
     }
 }
 @media only screen and (max-width: 600px) {
@@ -390,5 +446,17 @@ h1{
     }
     .services .card-body{
         padding-right: 10px;
+    }
+    .login .social{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-gap: 10px;
+        margin-top: 20px;
+    }
+    .login{
+       top: 200px;
+    }
+    .login .form_container{
+        border: none;
     }
 }
