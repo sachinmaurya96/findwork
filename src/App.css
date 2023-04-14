@@ -324,11 +324,108 @@ h1{
     align-items: center;
 }
 .login .form_container{
-    border: 1px solid rgb(169, 167, 167);
     padding: 20px 10px ;
     border-radius: 3px;
 }
+.about_card{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 50px;
+}
+.about_card h2{
+    font-weight: 700;
+    margin: 10px 0;
+}
+.about_card .img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.text_content{
+    padding: 20px 0;
+}
 
+.about_card img{
+    width: 100%;
+    height: auto;
+    
+}
+
+.contact .contact_card{
+  display: grid;
+  grid-template-columns: 25% 75%;
+}
+.social_icon{
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+   justify-content: center;
+   padding-bottom: 50px;
+   
+}
+.social_icon a{
+    text-decoration: none;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+   width: 120px;
+   height: 80px;
+   font-size: 15px;
+
+}
+.social_icon a i{
+    font-size: 25px;
+}
+.contact .row{
+    padding-top: 70px;
+}
+.team .team_card{
+    padding-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.team_card .img{
+    padding-bottom: 30px;
+}
+.team .row{
+    padding-top: 20px;
+}
+.team_card h2{
+    font-weight: 700;
+}
+.team_card img{
+    width: 100%;
+    height: auto;
+}
+.team .cards .card{
+    margin-bottom: 20px;
+    background: rgb(239, 238, 238);
+    border-radius: 10px;
+    text-align: center;
+}
+.team .card .social{
+    display: flex;
+    justify-content: center;
+}
+.team .card .social a{
+    margin: 0 5px;
+}
+.team .card .img{
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+.team .card img{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+.team .card img:hover{
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
 /* responsive code start */
 /* Extra small devices (phones, 600px and down) */
 
@@ -364,6 +461,54 @@ h1{
     .login{
         top: 200px;
     }
+    .about_card{
+        margin-top: 0;
+       }
+}
+@media only screen and (max-width: 1071px){
+    .about_card{
+        grid-template-columns: 100%;
+    }
+    .about_card .img{
+        width: 100%;
+    }
+    .about_card img{
+        width: 100%;
+    }
+    .about_card{
+        margin-top: 0;
+       }
+}
+@media only screen and (max-width: 997px){
+    .team .team_card{
+        padding-top: 50px;
+        display: grid;
+        grid-template-columns: 100%;
+    }
+    
+}
+@media only screen and (max-width: 816px){
+    .contact .contact_card{
+        display: grid;
+        grid-template-columns: 100%;
+      }
+      .social_icon{
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        justify-content: center;
+     }
+     .social_icon a{
+        font-size: 13px;
+        padding: 5px 2px;
+        height: 50px;
+     }
+     .social_icon a i{
+        font-size: 15px;
+     }
+     .team .team_card{
+        padding-top: 20px;
+       }
 }
 @media only screen and (max-width: 600px) {
     h1{
@@ -459,4 +604,14 @@ h1{
     .login .form_container{
         border: none;
     }
+   .about_card{
+    margin-top: 0;
+   }
+   .team_card.img{
+    margin-top: 100px;
+    padding: 0;
+   }
+   .team .team_card{
+    padding-top: 20px;
+   }
 }

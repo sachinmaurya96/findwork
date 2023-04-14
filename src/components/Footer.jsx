@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 function Footer() {
   return (
@@ -19,17 +20,17 @@ function Footer() {
             <div className="col-lg-3 col-md-6 col-sm-12">
             <div className="card-body">
                   <h5 className="card-title">Follow us</h5>
-                  <i class="fa-brands fa-facebook btn btn-outline-light"></i>
-                  <i class="fa-brands fa-square-twitter btn  btn-outline-light mx-3"></i>
-                  <i class="fa-brands fa-linkedin-in btn  btn-outline-light"></i>
+                 <a href="https://github.com/sachinmaurya96" className="btn btn-outline-success"><i class="fa-brands fa-github"></i></a>
+                 <a href="https://codepen.io/Yash-Flipkart" className="btn btn-outline-secondary mx-2"> <i class="fa-brands fa-codepen"></i></a>
+                 <a href="https://www.linkedin.com/in/sachin-maurya-826111267/" className="btn btn-outline-info"> <i class="fa-brands fa-linkedin-in"></i></a>
                 </div>
             </div>
             <div className="col-lg-3 col-md-6 col-sm-12">
             <div className="card-body">
                   <h5 className="card-title">Service</h5>
                  <ul>
-                    <li><a href="#">Find job</a></li>
-                    <li><a href="#">Post job</a></li>
+                    <li><NavLink to="/login"><a href="#">Find job</a></NavLink></li>
+                    <li><NavLink to="/login"><a href="#">Post job</a></NavLink></li>
                     <li><a href="#">Download app</a></li>
                     <li><a href="#">FAQs</a></li>
                  </ul>
@@ -39,7 +40,7 @@ function Footer() {
             <div className="card-body">
                   <h5 className="card-title">Support</h5>
                  <ul>
-                    <li><a href="#">Contact us</a></li>
+                    <li><NavLink to="/contact"><a href="#">Contact us</a></NavLink></li>
                  </ul>
                 </div>
             </div>
@@ -49,7 +50,7 @@ function Footer() {
         <div className="copyright">
           <ul>
             <li>
-              <a href="#">About us</a>
+             <NavLink to="/about"> <a href="#">About us</a></NavLink>
             </li>
             <li>
               <a href="#">Privacy policy</a>
